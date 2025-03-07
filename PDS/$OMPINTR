@@ -1,0 +1,79 @@
+                      I AM A MAINFRAMER VIDEOS
+          FROM THE LINUX FOUNDATION OPEN MAINFRAME PROJECT
+          ---- --- ----- ---------- ---- --------- -------
+
+There are two sets of tables included here - the long table and the
+short table.  Most of the time, all you will need is the short table.
+
+The short table is an 80-byte Fixed Blocked member of this pds, which
+contains the minimum URL to access each video on YouTube, plus the name
+of each person interviewd.  The long table contains a longer URL on
+YouTube, which when used, also displays the entire collection of these
+interviews.  You will not need to look at the long table often.
+
+Since this pds is a card image file, FB, LRECL=80, I have XMIT-ed the
+member which is a wider file, Fixed Blocked and Record Length = 132.
+You can access it by RECEIVE-ing it:  Example:
+
+        RECEIVE INDS(this.pds(OMPURLS))
+
+Or you can use the newest versions of the REVIEW command (51.3 or later)
+to view the XMIT-ted member.  Just REVIEW the member, and REVIEW (at
+that level) will un-XMIT it into a copy on your TSO tube.
+
+*** --------------------------------------------------------------- ***
+**   THE TABLE INCLUDED HERE IS FOR THE PURPOSE OF DIRECTLY FINDING  **
+**   A VIDEO THAT YOU WANT TO SEE.  YOU MIGHT BE ABLE TO ACCESS IT   **
+**   DIRECTLY USING OUR TABLE, ADDRESSING THE URL SPECIFICALLY.      **
+*** --------------------------------------------------------------- ***
+**                                                                   **
+**   I NEVER TRUST A WEB PAGE TO STAY THERE FOREVER.  SOMETIMES A    **
+**   DIRECT URL WILL PERSIST LONGER THAN THE PAGE POINTING TO IT.    **
+**                                                                   **
+**   So therefore, we have included the following material here...   **
+**                                                                   **
+*** --------------------------------------------------------------- ***
+
+
+The following table, member PODURLS in this pds, is meant to help
+you watch any of the "I Am A Mainframer" videos that you want to see.
+
+The following is a link to the podcast list for the
+"I Am A Mainframer" series of podcasts on YouTube.
+Just copy this URL into your browser for a complete list of
+interviews.
+
+https://www.youtube.com/playlist?list=PL8REpLGaY9QHNU5g4GIzdz4CA64l24FOR
+
+
+Quick Instructions for viewing a podcast:
+
+Method 1.
+
+Edit or Browse the member PODURLS, pick which video you want
+to see, use your terminal emulator to copy the URL (the https://
+stuff, which is printable EBCDIC) and paste the URL into your
+browser, and go.  Since the URL is printable, your cut and paste
+mechanism in the terminal emulator should itself make the ASCII
+translation.
+
+Method 2.
+
+Download the member PODURLS to the PC, WITH ASCII TRANSLATION.
+
+Browse the ASCII member with your browser.
+
+Select the video you want to see.
+
+Copy the URL for that video which is on the same line as the
+name of the person being interviewed.
+
+Paste the URL into your browser, and go.
+
+email:    Sam Golob  <sbgolob@cbttape.org>
+          Steven Dickens <sdickens@futurumgroup.com>
+
+
+We hope to update these tables, as the Linux Foundation makes more
+videos.
+
